@@ -16,3 +16,11 @@
 // const imagePath = (name) => images(name, true)
 
 console.log('Hello World from Webpacker')
+
+// some lines missing???
+
+
+import 'bootstrap';
+import {} from './components/navbar'  // fill in function
+
+// then call navbar function here. call it with () even if doesnt take params.
