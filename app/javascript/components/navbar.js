@@ -1,2 +1,15 @@
-// selecting navbar based on css, event listener on window, listening for scroll
-// to be longer than banner, then will add banner white class.
+const initUpdateNavbarOnScroll = () => {
+  const navbar = document.querySelector('.navbar-lewagon');
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      console.log("change to change change")
+      if (window.scrollY >= window.innerHeight) {
+        navbar.classList.add('navbar-lewagon-white');
+      } else {
+        navbar.classList.remove('navbar-lewagon-white');
+      }
+    });
+  }
+}
+
+export { initUpdateNavbarOnScroll };

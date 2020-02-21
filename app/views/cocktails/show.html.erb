@@ -1,7 +1,8 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<h2><%= @cocktail.name %></h2>
 
-<%= @cocktail.name %>
+<%= cl_image_tag @cocktail.photos.each |photo| %>
+<%= photo %>
+<% end %>
 
 <% @cocktail.doses.each do |dose| %>
   <div class="dose-details">
