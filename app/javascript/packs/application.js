@@ -3,6 +3,8 @@ import { loadDynamicBannerText } from '../components/banner'
 
 import 'bootstrap';
 
+//= require bootstrap-modal
+
 // call the function that we imported
 initUpdateNavbarOnScroll();
 loadDynamicBannerText();
